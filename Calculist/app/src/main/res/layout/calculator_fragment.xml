@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+                name="vm"
+                type="kim.wooseop.calculist.vm.CalculatorViewModel" />
+    </data>
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.CalculatorFragment"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:rowCount="3">
+
+        <Button
+                android:text="+"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="-"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="×"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="÷"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="="
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="C"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="0"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="1"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+        <Button
+                android:text="2"
+                android:onClick="@{vm::input}"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+
+    </GridLayout>
+</layout>
